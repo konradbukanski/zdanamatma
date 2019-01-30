@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: rgb(250, 250, 250);
+  font-family: "Kalam", cursive;
+}
+.header {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #253069;
+}
+.bckcolor {
+  position: absolute;
+  background-color: rgb(250, 250, 250);
+  border-radius: 35%;
+  width: 110vw;
+  left: -5vw;
+  height: 100vh;
+  top: 74%;
+}
+.header__btn {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  width: 80px;
+  height: 80px;
+  background-color: #d6372e;
+  border-radius: 50%;
+  z-index: 2;
+}
+.header__btn i,
+.contact span i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: white;
+}
+.header__logo {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  color: white;
+  font-size: 40px;
+  font-family: "Kalam", cursive;
+}
+.header__image {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 780px;
+  overflow: hidden;
+}
+.header__image img {
+  /* width: 100%; */
+}
+.header__menu {
+  position: absolute;
+  right: 60px;
+  top: 80px;
+  font-size: 20px;
+  color: #d6372e;
+}
+.header__menu a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Kalam", cursive;
+  margin: 5px;
+}
+.ofert {
+  padding-top: 50px;
+  width: 60%;
+  margin-left: 20%;
+}
+.ofert__boxes {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+.ofert__box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  background-color: #fff;
+  border: 2px solid #e8eaed;
+  border-radius: 10px;
+  text-align: center;
+  color: #253069;
+  box-sizing: border-box;
+  padding: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 20px;
+}
+.ofert__box p i {
+  color: #253069;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.ofert__box--name {
+  /* position: absolute;0 */
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: #253069;
+  color: white;
+}
+.ofert__box button {
+  border: 0;
+  padding: 5px;
+  border: 3px solid #57567c;
+  background-color: #253069;
+  color: white;
+  border-radius: 5px;
+  padding: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.ofert__box--price {
+  padding: 20px;
+  border-top: 2px solid #9e9e9e;
+}
+.ofert__box button:hover {
+  background-color: #d6372e;
+  border: 3px solid #fff;
+}
+.registration {
+  margin-top: 100px;
+  padding: 50px 20%;
+  width: 60%;
+  background-color: #253069;
+  color: white;
+}
+.registration input {
+  display: block;
+  border-radius: 10px;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+.contact {
+  margin-left: 20%;
+  width: 60%;
+}
+.contact__option {
+  display: flex;
+  justify-content: space-around;
+}
+.contact span {
+  position: relative;
+  margin: 50px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #253069;
+}
+.arrow__top {
+  position: fixed;
+  bottom: 60px;
+  left: -60px;
+  width: 60px;
+  height: 60px;
+  background-color: #d6372e;
+  border-radius: 5px;
+  z-index: 2;
+}
