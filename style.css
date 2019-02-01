@@ -4,6 +4,11 @@ body {
   background-color: rgb(250, 250, 250);
   font-family: "Kalam", cursive;
 }
+a {
+  text-decoration: none;
+  color: #000;
+  /* display: block; */
+}
 .header {
   position: relative;
   width: 100vw;
@@ -56,7 +61,7 @@ body {
   overflow: hidden;
 }
 .header__image img {
-  /* width: 100%; */
+  width: 90%;
 }
 .header__menu {
   position: absolute;
@@ -153,14 +158,16 @@ body {
   display: block;
   border-radius: 10px;
 }
-input[type="text"],
-input[type="password"] {
-  width: 100%;
+.registration input[type="text"],
+.registration input[type="password"] {
+  width: 90%;
   padding: 15px;
-  margin: 5px 0 22px 0;
+  /* margin: 5px 0 22px 0; */
   display: inline-block;
   border: none;
-  background: #f1f1f1;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  /* background: #f1f1f1; */
 }
 .contact {
   margin-left: 20%;
@@ -177,6 +184,65 @@ input[type="password"] {
   height: 70px;
   border-radius: 50%;
   background-color: #253069;
+}
+.sign_in {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  background-color: #fff;
+  border-radius: 5px;
+  max-width: 400px;
+  padding: 20px 40px;
+  background: #fff;
+  height: 300px;
+  margin: auto;
+  opacity: 0;
+  z-index: 500;
+  border: 1px solid #eee;
+  transition: 0.3s;
+  display: none;
+}
+.display {
+  display: block;
+  opacity: 1;
+}
+.up {
+  transform: translateY(-180px);
+}
+.form-group {
+  position: relative;
+  font-size: 15px;
+  color: #666;
+}
+
+.inpt {
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  height: 35px;
+  background: none;
+  border: none;
+  padding: 5px 0;
+  transition: 0.3s;
+  border-bottom: 1px solid #777;
+  color: #555;
+}
+input[type="submit"] {
+  background: #fff;
+  display: block;
+  padding: 5px;
+  width: 150px;
+  height: 35px;
+  border: 1px solid #777;
+  margin-top: 25px;
+  cursor: pointer;
+}
+.close {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
 }
 .arrow__top {
   position: fixed;

@@ -21,7 +21,6 @@
     <section class="header">
       <span class="header__logo">Zdana Matma</span>
       <div class="header__image"><img src="img/teacher.png" /></div>
-      <span class="header__btn"><i class="fas fa-sign-in-alt"></i></span>
       <nav class="header__menu">
         <a href="/html/">Wstęp</a> | <a href="/css/">Oferta</a> |
         <a href="/js/">Rejestracja</a> | <a href="/jquery/">Kontakt</a>
@@ -33,6 +32,7 @@
       <h1>NASZA OFERTA</h1>
       <div class="ofert__boxes">
         <div class="ofert__box">
+          <img src="img/funcion.png" height="20%" />
           <span class="ofert__box--name">Liczby rzeczywiste</span>
           <span class="ofert__box--price">Cena: 39 zł</span>
           <span><i class="fas fa-list-ol"></i> 54 zadania</span>
@@ -137,7 +137,40 @@
         <span><i class="far fa-envelope-open"></i></span>
       </div>
     </section>
+    <div class="sign_in">
+      <i class="fas fa-times close"></i>
+      <h1>Logowanie</h1>
+      <form
+        class="form-group"
+        action="#"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="inpt"
+          required="required"
+          placeholder="Email"
+        />
+        <input
+          type="password"
+          name="password"
+          class="inpt"
+          required="required"
+          placeholder="Hasło"
+        />
+        <input type="checkbox" id="remember" class="checkbox" checked />
+        <label for="remember">Remember me</label>
+        <div class="submit-wrap">
+          <input type="submit" value="Sign in" class="submit" />
+          <a href="#" class="more">Przypomnij hasło</a>
+        </div>
+      </form>
+    </div>
+    <span class="header__btn"><i class="fas fa-sign-in-alt"></i></span>
     <span class="arrow__top"><i class="fas fa-arrow-up"></i></span>
-    <section class="body"></section>
+    <script src="script.js"></script>
   </body>
 </html>
